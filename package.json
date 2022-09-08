@@ -5,6 +5,7 @@
   "description": "Pyroarsonist's eslint config",
   "license": "MIT",
   "author": "Pyroarsonist <velikiydan@gmail.com>",
+  "homepage": "https://github.com/Pyroarsonist/eslint-config-pyroarsonist#readme",
   "peerDependencies": {
     "@babel/core": "^7.19.0",
     "@babel/eslint-parser": "^7.18.9",
