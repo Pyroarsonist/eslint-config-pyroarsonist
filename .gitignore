@@ -1,0 +1,11 @@
+.idea
+.vscode
+.DS_Store
+.env
+.eslintcache
+node_modules
+dist
+build
+public
+yarn-error.log
+package-lock.json
