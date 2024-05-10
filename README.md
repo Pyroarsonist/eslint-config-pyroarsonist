@@ -1,3 +1,3 @@
 # eslint-config-pyroarsonist
 
-Personal **Pyroarsonist**'s eslint config.
+Personal **Pyroarsonist**'s eslint (including prettier) config.
