@@ -26,6 +26,7 @@ export const recommended = [
       'no-underscore-dangle': 'off',
       'unicorn/no-anonymous-default-export': 'off',
       'perfectionist/sort-objects': 'off',
+      'unicorn/prevent-abbreviations': 'off',
     },
   },
   prettier,
