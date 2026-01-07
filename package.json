@@ -1,22 +1,22 @@
 {
   "name": "eslint-config-pyroarsonist",
-  "version": "0.1.0",
-  "main": ".eslintrc.js",
+  "version": "0.2.0",
+  "main": "eslint.config.js",
   "description": "Pyroarsonist's eslint config",
   "license": "MIT",
   "author": "Pyroarsonist <velikiydan@gmail.com>",
   "homepage": "https://github.com/Pyroarsonist/eslint-config-pyroarsonist#readme",
   "peerDependencies": {
-    "@babel/core": "^7.24.5",
-    "@babel/eslint-parser": "^7.24.5",
-    "@babel/eslint-plugin": "^7.24.5",
-    "@babel/preset-env": "^7.24.5",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-prettier": "^5.1.3",
-    "prettier": "^3.2.5",
-    "prettier-eslint": "^16.3.0"
-  }
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-perfectionist": "^5.2.0",
+    "eslint-plugin-unicorn": "^62.0.0",
+    "globals": "^17.0.0",
+    "typescript-eslint": "^8.52.0"
+  },
+  "devDependencies": {
+    "prettier-config-pyroarsonist": "^0.0.3"
+  },
+  "prettier": "prettier-config-pyroarsonist"
 }
