@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pyroarsonist",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "eslint.config.js",
   "description": "Pyroarsonist's eslint config",
   "license": "MIT",
@@ -10,7 +10,6 @@
     "@eslint/js": "^9.39.2",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-perfectionist": "^5.2.0",
     "eslint-plugin-unicorn": "^62.0.0",
     "globals": "^17.0.0",
     "typescript-eslint": "^8.52.0"

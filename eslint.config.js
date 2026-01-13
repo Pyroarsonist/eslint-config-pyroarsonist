@@ -1,6 +1,5 @@
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
-import perfectionist from 'eslint-plugin-perfectionist';
 import unicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
@@ -8,7 +7,6 @@ import tseslint from 'typescript-eslint';
 export const recommended = [
   js.configs.recommended,
   unicorn.configs['flat/recommended'],
-  perfectionist.configs['recommended-natural'],
   {
     languageOptions: {
       globals: { ...globals.browser, ...globals.node },
@@ -25,25 +23,25 @@ export const recommended = [
       'no-plusplus': 'off',
       'no-underscore-dangle': 'off',
       'unicorn/no-anonymous-default-export': 'off',
-      'perfectionist/sort-objects': 'off',
       'unicorn/prevent-abbreviations': 'off',
+      'unicorn/prefer-top-level-await': 'off',
+      'unicorn/no-process-exit': 'off',
+      'unicorn/no-null': 'off',
+      'object-shorthand': 'error',
+      'unicorn/filename-case': 'off',
     },
   },
   prettier,
 ];
 
 export const typescript = tseslint.config(
-  ...recommended,
   ...tseslint.configs.strictTypeChecked,
+  ...recommended,
   {
-    languageOptions: {
-      parserOptions: {
-        project: true,
-      },
-    },
     name: 'eslint-config-pyroarsonist/ts-recommended',
     rules: {
       '@typescript-eslint/no-explicit-any': 'error',
+      '@typescript-eslint/restrict-template-expressions': 'off',
     },
   },
   prettier,
