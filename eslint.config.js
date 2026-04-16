@@ -18,8 +18,8 @@ const importRules = {
           ['^\\u0000'],
           // 2. Node.js built-ins and External packages (react, opencv-wasm)
           ['^node:', '^@?\\w'],
-          // 3. Absolute/Internal imports (Anything starting with src/ or your alias)
-          ['^src(/.*|$)'],
+          // 3. Absolute/Internal imports (Anything starting with src/ or ~ or @)
+          ['^(@|~|src)(/.*|$)'],
           // 4. Relative imports (Anything starting with a dot)
           ['^\\.'],
         ],
