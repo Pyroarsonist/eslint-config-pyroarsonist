@@ -3,6 +3,31 @@ import prettier from 'eslint-config-prettier';
 import unicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
+
+const importRules = {
+  plugins: {
+    'simple-import-sort': simpleImportSort,
+  },
+  rules: {
+    'simple-import-sort/imports': [
+      'error',
+      {
+        groups: [
+          // 1. Side effect imports (e.g. import "./style.css")
+          ['^\\u0000'],
+          // 2. Node.js built-ins and External packages (react, opencv-wasm)
+          ['^node:', '^@?\\w'],
+          // 3. Absolute/Internal imports (Anything starting with src/ or your alias)
+          ['^src(/.*|$)'],
+          // 4. Relative imports (Anything starting with a dot)
+          ['^\\.'],
+        ],
+      },
+    ],
+    'simple-import-sort/exports': 'error',
+  },
+};
 
 export const recommended = [
   js.configs.recommended,
@@ -32,6 +57,7 @@ export const recommended = [
     },
   },
   prettier,
+  importRules,
 ];
 
 export const typescript = tseslint.config(
@@ -45,6 +71,7 @@ export const typescript = tseslint.config(
     },
   },
   prettier,
+  importRules,
 );
 
 export default {

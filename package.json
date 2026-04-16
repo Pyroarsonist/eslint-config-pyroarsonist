@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pyroarsonist",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "type": "module",
   "main": "eslint.config.js",
   "types": "eslint.d.ts",
@@ -17,6 +17,7 @@
     "typescript-eslint": "^8.52.0"
   },
   "devDependencies": {
+    "eslint-plugin-simple-import-sort": "^13.0.0",
     "prettier-config-pyroarsonist": "^0.0.3"
   },
   "prettier": "prettier-config-pyroarsonist"
