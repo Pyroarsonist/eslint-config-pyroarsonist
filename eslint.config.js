@@ -54,6 +54,7 @@ export const recommended = [
       'unicorn/no-null': 'off',
       'object-shorthand': 'error',
       'unicorn/filename-case': 'off',
+      'unicorn/prefer-event-target': 'off',
     },
   },
   prettier,
@@ -68,6 +69,8 @@ export const typescript = tseslint.config(
     rules: {
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/restrict-template-expressions': 'off',
+      '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }],
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     },
   },
   prettier,
